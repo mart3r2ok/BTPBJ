@@ -18,7 +18,7 @@ MonoBehaviour:
   Weaponn: 1
   Armorr: 0
   Count: 1
-  Type: 0
+  Type: 2
   Damage: 6
   Armor: 0
   HealAmount: 0
@@ -26,3 +26,4 @@ MonoBehaviour:
   AttackCooldown: 0.7
   AttackRadius: 0
   rarity: Common
+  prefab: {fileID: 6401276965559700103, guid: 65312e482157f7c468759860638171b2, type: 3}

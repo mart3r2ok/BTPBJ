@@ -73,6 +73,7 @@
     <Compile Include="Assets\Scripts\IInteractable.cs" />
     <Compile Include="Assets\Resources\Items\itemData.cs" />
     <Compile Include="Assets\Scripts\ItemPickUP.cs" />
+    <Compile Include="Assets\Scripts\SwordTrigger.cs" />
     <Compile Include="Assets\Scripts\TesterInven.cs" />
     <Compile Include="Assets\Scripts\SlotClick.cs" />
     <Compile Include="Assets\Scripts\Inventory.cs" />

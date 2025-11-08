@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4a7ccd21d716fc34d9b13986af0fed55
+guid: 1befe14692541024793dbc960127fd31
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2341584085212108939
-    second: SwordN1_0
+      213: -4359856498088985746
+    second: CommonSlash_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,12 +46,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 6
+  alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SwordN1_0
+      name: CommonSlash_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 24
-        height: 24
+        width: 19
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 57769354ea5018fd0800000000000000
-      internalID: -2341584085212108939
+      spriteID: e6b3abf4d9dae73c0800000000000000
+      internalID: -4359856498088985746
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      SwordN1_0: -2341584085212108939
+      CommonSlash_0: -4359856498088985746
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

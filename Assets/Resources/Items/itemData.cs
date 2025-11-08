@@ -16,6 +16,7 @@ public class ItemData : ScriptableObject
     public float AttackCooldown;
     public float AttackRadius;
     public string rarity;
+    public GameObject prefab;
     public enum ItemType
     {
         HealthPotion,
