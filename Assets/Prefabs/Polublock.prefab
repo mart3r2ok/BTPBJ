@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8290671781493396175}
   - component: {fileID: 2052339545846148584}
   - component: {fileID: 8411430431449813403}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Polublock
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

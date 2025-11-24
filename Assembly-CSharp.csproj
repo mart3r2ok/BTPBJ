@@ -61,22 +61,30 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.55f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Mob.cs" />
-    <Compile Include="Assets\Scripts\AttackPlayer.cs" />
-    <Compile Include="Assets\Scripts\PlayerPickUP.cs" />
-    <Compile Include="Assets\Scripts\MainHero.cs" />
+    <Compile Include="Assets\Scripts\Entities\EnemyIdleState.cs" />
+    <Compile Include="Assets\Scripts\Entities\EnemyState.cs" />
+    <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
+    <Compile Include="Assets\Scripts\World\Manager.cs" />
+    <Compile Include="Assets\Scripts\SwordGun\SwordDamage.cs" />
+    <Compile Include="Assets\Scripts\Entities\ZombieAI.cs" />
     <Compile Include="Assets\Resources\Items\MobData.cs" />
-    <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\InventoryE.cs" />
-    <Compile Include="Assets\Scripts\Item.cs" />
-    <Compile Include="Assets\Scripts\InventoryUI.cs" />
-    <Compile Include="Assets\Scripts\IInteractable.cs" />
+    <Compile Include="Assets\Scripts\Entities\EnemyChaseState.cs" />
+    <Compile Include="Assets\Scripts\MainHero\PlayerPickUP.cs" />
+    <Compile Include="Assets\Scripts\SO\Item.cs" />
+    <Compile Include="Assets\Scripts\Entities\EnemyDieState.cs" />
+    <Compile Include="Assets\Scripts\MainHero\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\Items\SlotClick.cs" />
+    <Compile Include="Assets\Scripts\Items\ItemPickUP.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IInteractable.cs" />
     <Compile Include="Assets\Resources\Items\itemData.cs" />
-    <Compile Include="Assets\Scripts\ItemPickUP.cs" />
-    <Compile Include="Assets\Scripts\SwordTrigger.cs" />
-    <Compile Include="Assets\Scripts\TesterInven.cs" />
-    <Compile Include="Assets\Scripts\SlotClick.cs" />
-    <Compile Include="Assets\Scripts\Inventory.cs" />
+    <Compile Include="Assets\Scripts\Entities\Enemy.cs" />
+    <Compile Include="Assets\Scripts\MainHero\MainHero.cs" />
+    <Compile Include="Assets\Scripts\SO\Mob.cs" />
+    <Compile Include="Assets\Scripts\SwordGun\SwordTrigger.cs" />
+    <Compile Include="Assets\Scripts\Inventory\InventoryE.cs" />
+    <Compile Include="Assets\Scripts\MainHero\AttackPlayer.cs" />
+    <Compile Include="Assets\Scripts\Interfaces\IDamageable.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

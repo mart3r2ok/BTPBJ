@@ -22,7 +22,7 @@ MonoBehaviour:
   Damage: 6
   Armor: 0
   HealAmount: 0
-  Range: 1
+  Range: 1.6
   AttackCooldown: 0.7
   AttackRadius: 0
   rarity: Common
