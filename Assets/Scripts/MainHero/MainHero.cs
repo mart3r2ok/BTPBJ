@@ -11,21 +11,33 @@ public class MainHero : MonoBehaviour
     public float jumpForce = 10f;
     public float speed = 4f;
     public Vector2 checkSize = new Vector2(0.9f, 0.1f);
-    private Animator animator;
     public GameObject inv;
     public bool right = true;
     [SerializeField] private InventoryE inventoryE;
     public ItemData currentWeapon;
     public Transform handPoint;
     private GameObject currentWeaponObject;
+    private Animator animator;
+    public float defence;
+    private bool isArmored = false;
+    public UpgradingGG upgradingGG;
     void Start()
     {
+        defence = upgradingGG.GetArmor();
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
     }
     void Update()
     {
-        if (inventoryE.items[0] != null)
+        if (!isArmored)
+        {
+            if (inventoryE.items[1] != null)
+            {
+                defence += inventoryE.items[1].Armor;
+                isArmored = true;
+            }
+        }
+            if (inventoryE.items[0] != null)
         {
             if (currentWeapon == null || currentWeapon != inventoryE.items[0])
             {
@@ -64,10 +76,10 @@ public class MainHero : MonoBehaviour
             transform.localScale = new Vector3(-1, 1, 1); // Отразить по оси X
         }
         else if (moveInput > 0)
-        {
+        {   
             transform.localScale = new Vector3(1, 1, 1); // Вернуть нормальный вид
         }
-        animator.SetBool("isMoving", isRunning);
+        animator.SetFloat("Speed", Mathf.Abs(moveInput));
     }
     void TryInteract()
     {

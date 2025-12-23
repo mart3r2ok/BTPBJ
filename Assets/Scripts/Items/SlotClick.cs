@@ -102,8 +102,6 @@ public class ItemSlotClickable : MonoBehaviour, IPointerClickHandler
             }
             else
             {
-                if (adjustedIndex == 0 && !heldItem.Weaponn) return;
-                if (adjustedIndex == 1 && !heldItem.Armorr) return;
                 var temp = items[adjustedIndex];
                 items[adjustedIndex] = heldItem;
                 heldItem = temp;

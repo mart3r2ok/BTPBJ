@@ -1,7 +1,8 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour, IDamageable
 {
     private EnemyState currentState;  
     [SerializeField] private MobData mob;
@@ -15,7 +16,10 @@ public class Enemy : MonoBehaviour
     public float timer = 0f;
     public bool isgrounded;
     public float rayLength = 0.5f;
+    public Image FillImage;
+    public GameObject hpBarCanvas;
     [SerializeField] private Transform groundCheck;
+    public DamageSpawnerManager DamagePopupManager;
     void Awake()
     {
         PlayerObject = GameObject.FindWithTag("Player");
@@ -23,6 +27,7 @@ public class Enemy : MonoBehaviour
         currentState = new EnemyIdleState(this, mob, PlayerObject.transform);
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<CapsuleCollider2D>();
+        hpBarCanvas.SetActive(false);
     }
     void Update()
     {
@@ -39,14 +44,27 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+        currentHealth = Mathf.Clamp(currentHealth, 0, mob.maxHealth);
         Debug.Log($"{mob.mobName} took {damage} damage! HP left: {currentHealth}");
-
+        UpdateHpBar();
+        DamageSpawnerManager.Instance.SpawnPopup(
+    transform.position + new Vector3(0, 0.8f, 0),
+    damage
+);
         if (currentHealth <= 0)
         {
             ChangeState(new EnemyDieState(this));
         }
     }
-
+    void UpdateHpBar()
+    {
+        if (currentHealth < mob.maxHealth)
+        {
+            hpBarCanvas.SetActive(true);
+        }
+        float fillAmount = (float)currentHealth / mob.maxHealth;
+        FillImage.fillAmount = fillAmount;
+    }
     public void Die()
     {
         Debug.Log($"{mob.mobName} has died!");

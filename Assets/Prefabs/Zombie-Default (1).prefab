@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8179972823861073688}
   - component: {fileID: 2816102966139632151}
   m_Layer: 0
-  m_Name: Zombie-Default
+  m_Name: Zombie-Default (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 4402211934066695438}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.66, y: -1.83, z: 0}
+  m_LocalPosition: {x: 5.92, y: -2.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -175,10 +175,12 @@ MonoBehaviour:
   jumpPower: 5
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   timer: 0
   isgrounded: 0
   rayLength: 1
+  FillImage: {fileID: 0}
+  hpBarCanvas: {fileID: 0}
   groundCheck: {fileID: 8782832560389821191}
 --- !u!95 &2816102966139632151
 Animator:

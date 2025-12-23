@@ -62,7 +62,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Entities\EnemyIdleState.cs" />
+    <Compile Include="Assets\Scripts\EFFECTS\DamageSpawnerManager.cs" />
     <Compile Include="Assets\Scripts\Entities\EnemyState.cs" />
+    <Compile Include="Assets\Scripts\EFFECTS\DamagePopup.cs" />
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
     <Compile Include="Assets\Scripts\World\Manager.cs" />
@@ -76,10 +78,12 @@
     <Compile Include="Assets\Scripts\MainHero\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Items\SlotClick.cs" />
     <Compile Include="Assets\Scripts\Items\ItemPickUP.cs" />
+    <Compile Include="Assets\Scripts\MainHero\AnimationGG.cs" />
     <Compile Include="Assets\Scripts\Interfaces\IInteractable.cs" />
     <Compile Include="Assets\Resources\Items\itemData.cs" />
     <Compile Include="Assets\Scripts\Entities\Enemy.cs" />
     <Compile Include="Assets\Scripts\MainHero\MainHero.cs" />
+    <Compile Include="Assets\Scripts\World\UpgradingGG.cs" />
     <Compile Include="Assets\Scripts\SO\Mob.cs" />
     <Compile Include="Assets\Scripts\SwordGun\SwordTrigger.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryE.cs" />

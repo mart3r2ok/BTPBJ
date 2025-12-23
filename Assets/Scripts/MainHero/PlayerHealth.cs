@@ -2,15 +2,16 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public int maxHealth = 100;
-    [SerializeField] private int currentHealth;
+    public float maxHealth = 100;
+    [SerializeField] private float currentHealth;
     void Awake()
     {
         currentHealth = maxHealth;
     }
     public void TakeDamage(int damage)
     {
-        currentHealth -= damage;
+        currentHealth -= damage - gameObject.GetComponent<MainHero>().defence;
+        Debug.Log($"Player took {damage}, but {gameObject.GetComponent<MainHero>().defence} damage was reduced");
         if (currentHealth <= 0)
         {
             Die();
